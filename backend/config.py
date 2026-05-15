@@ -14,9 +14,18 @@ class Settings(BaseSettings):
     backend_port: int = Field(default=8000, alias="BACKEND_PORT")
 
     nvidia_api_key: str = Field(default="", alias="NVIDIA_API_KEY")
+    nvidia_base_url: str = Field(
+        default="https://integrate.api.nvidia.com/v1",
+        alias="NVIDIA_BASE_URL",
+    )
     nvidia_model: str = Field(
-        default="meta/llama-3.1-70b-instruct",
+        default="meta/llama-3.1-8b-instruct",
         alias="NVIDIA_MODEL",
+    )
+    nvidia_temperature: float = Field(default=0.2, alias="NVIDIA_TEMPERATURE")
+    nvidia_max_completion_tokens: int = Field(
+        default=512,
+        alias="NVIDIA_MAX_COMPLETION_TOKENS",
     )
 
     semantic_cache_threshold: float = Field(default=0.90, alias="SEMANTIC_CACHE_THRESHOLD")
