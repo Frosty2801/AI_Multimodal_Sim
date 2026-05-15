@@ -1,0 +1,34 @@
+# API backend
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+pydantic-settings
+python-dotenv
+
+# LangChain + NVIDIA API
+langchain
+langchain-core
+langchain-community
+langchain-nvidia-ai-endpoints
+
+# HTTP clients and external APIs
+httpx
+requests
+
+# RAG, scraping, embeddings, and vector store
+beautifulsoup4
+lxml
+html2text
+faiss-cpu
+numpy
+
+# Optional document/audio/image utilities
+openai
+pillow
+pydub
+
+# Development and testing
+pytest
+ruff
+
